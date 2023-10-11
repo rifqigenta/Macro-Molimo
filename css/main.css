@@ -100,11 +100,54 @@
   height: 2913px;
   position: relative;
 }
-
+input {
+  border: 1px solid black;
+  padding: 4px 17px;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+}
+i {
+  color: var(--primary-60);
+  font-size: 15px;
+}
+.btn-src {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-src i {
+  color: #000000;
+  font-size: 20px;
+}
+#user {
+  color: #000000;
+  font-size: 25px;
+}
+button.seemore {
+  background-color: blue;
+  padding: 15px 45px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  position: absolute;
+  top: 112%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .home .footer {
   display: flex;
   flex-direction: column;
-  width: 1210px;
+  width: 1310px;
   align-items: center;
   gap: 48px;
   padding: 48px 80px;
@@ -228,7 +271,7 @@
   width: 1210px;
   align-items: center;
   gap: 12px;
-  padding: 25px 120px 80px;
+  padding: 45px 90px 80px;
   position: absolute;
   top: 0;
   left: 0;
@@ -264,8 +307,8 @@
 
 .home .secondary-headline {
   position: relative;
-  align-self: stretch;
-  margin-top: 30px;
+
+  margin-top: -10px;
   font-family: var(--heading-2-font-family);
   font-weight: var(--heading-2-font-weight);
   color: var(--coolgray-90);
@@ -328,6 +371,11 @@
   position: relative;
   flex: 0 0 auto;
   margin-right: -92px;
+}
+.title-ctg {
+  font-size: 20px; /* Sesuaikan ukuran font dengan kebutuhan Anda */
+  max-height: 100px; /* Batasi tinggi maksimum elemen h1 */
+  overflow: hidden; /* Sembunyikan teks yang melebihi tinggi maksimum */
 }
 
 .home .text-wrapper-3 {
@@ -468,11 +516,11 @@
 .home .selection-design {
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  width: 1210px;
   height: 522px;
   align-items: flex-start;
   gap: 12px;
-  padding: 0px 120px 8px;
+  padding: 0px 90px 8px;
   position: absolute;
   top: 1064px;
   left: 0;
@@ -732,7 +780,7 @@
   gap: 141px;
   padding: 0px 76px 139px;
   position: absolute;
-  top: 84px;
+  top: 50px;
   left: 0;
   background-color: var(--coolgray-10);
 }
@@ -741,7 +789,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  padding: 195px 0px;
+  padding: 145px 0px;
   flex: 1;
   flex-grow: 1;
   display: flex;
@@ -865,7 +913,7 @@
 .home .navbar {
   display: flex;
   width: 1140px;
-  height: 85px;
+  height: 35px;
   align-items: center;
   gap: 20px;
   padding: 12px 115px;
@@ -919,6 +967,7 @@
   line-height: var(--heading-4-line-height);
   white-space: nowrap;
   font-style: var(--heading-4-font-style);
+  color: #000000;
 }
 
 .home .for-figma {
@@ -958,20 +1007,14 @@
   letter-spacing: 0;
   line-height: 20px;
   white-space: nowrap;
+  color: #000000;
 }
-
-.home .frame-8 {
-  display: inline-flex;
-  height: 33px;
-  align-items: center;
-  gap: 100px;
-  padding: 4px 17px;
-  position: relative;
-  flex: 0 0 auto;
-  border-radius: 34px;
-  overflow: hidden;
-  border: 2px solid;
-  border-color: #000000;
+.home .menu-item a {
+  text-decoration: none;
+  color: #000000;
+}
+.home .menu-item a:hover {
+  font-weight: bold;
 }
 
 .home .text-wrapper-5 {
@@ -994,10 +1037,10 @@
 
 .home .frame-9 {
   display: inline-flex;
-  height: 51px;
+  height: 31px;
   align-items: center;
   gap: 100px;
-  padding: 4px 17px;
+  padding: 1px 17px;
   position: relative;
   flex: 0 0 auto;
   background-color: #353940;
@@ -1005,7 +1048,10 @@
   overflow: hidden;
   border: 2px solid;
 }
-
+.logo-nav {
+  width: 50px;
+  height: 50px;
+}
 .home .text-wrapper-6 {
   position: relative;
   width: fit-content;
