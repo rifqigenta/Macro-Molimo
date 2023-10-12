@@ -125,7 +125,7 @@ i {
   color: #000000;
   font-size: 20px;
 }
-#user {
+.fa-regular.fa-user {
   color: #000000;
   font-size: 25px;
 }
@@ -171,7 +171,7 @@ button.seemore {
   width: 1210px;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 50px;
   position: relative;
   flex: 0 0 auto;
 }
@@ -346,7 +346,6 @@ button.seemore {
   align-self: stretch;
   width: 100%;
   height: 220px;
-  background-image: url(./img/picture-8.svg);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -667,7 +666,6 @@ button.seemore {
   align-self: stretch;
   width: 100%;
   height: 220px;
-  background-image: url(./img/picture.svg);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -684,9 +682,9 @@ button.seemore {
 
 .home .selection-creat {
   display: flex;
-  width: 110px;
+  width: 100px;
   align-items: center;
-  gap: 60px;
+  gap: 10px;
   padding: 47px 120px 30px;
   position: absolute;
   top: 628px;
@@ -711,7 +709,7 @@ button.seemore {
   gap: 48px;
   position: relative;
   align-self: stretch;
-  width: 1210px;
+  width: 1010px;
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
@@ -743,14 +741,12 @@ button.seemore {
 
 .home .paragraph-2 {
   font-size: var(--body-l-font-size);
-  line-height: var(--body-l-line-height);
   position: relative;
-  align-self: stretch;
   font-family: var(--body-l-font-family);
   font-weight: var(--body-l-font-weight);
   color: var(--coolgray-90);
-  letter-spacing: var(--body-l-letter-spacing);
   font-style: var(--body-l-font-style);
+  display: contents;
 }
 
 .home .buttons-group-2 {
@@ -763,13 +759,12 @@ button.seemore {
 
 .home .placeholder-picture-8 {
   position: relative;
-  flex: 1;
+  margin-left: -8cm;
   align-self: stretch;
   flex-grow: 1;
-  box-shadow: 2px 4px 10px #00000040;
-  background-image: url(./img/picture-3.svg);
-  background-size: cover;
-  background-position: 50% 50%;
+  width: 900px;
+  height: 275px;
+  margin-top: 150px;
 }
 
 .home .heading-home-page {
@@ -1068,4 +1063,8 @@ button.seemore {
   position: relative;
   width: 22px;
   height: 27px;
+}
+button .button-3:hover {
+  background-color: #fff;
+  color: #000000;
 }
