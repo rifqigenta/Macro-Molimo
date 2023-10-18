@@ -57,29 +57,31 @@
   --body-l-line-height: 139.9999976158142%;
   --body-l-font-style: normal;
 }
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
 .page-content {
   display: flex;
-  width: 1240px;
-  height: 100vh;
   align-items: center;
-  justify-content: flex-end;
-  padding: 0px 0px 0px 0px;
+  justify-content: flex-start;
   position: relative;
 }
 
 .page-content .placeholder-picture img {
   position: relative;
-  width: 500px;
-  height: 445px;
+  height: 110vh;
   background-size: cover;
   background-position: 10% 10%;
-  margin-bottom: 5em;
 }
 
 .page-content .right-column {
   position: relative;
-  width: 659px;
+  width: 655px;
   height: 552px;
+  padding-right: 100px;
+  margin-bottom: 35px;
 }
 
 .page-content .section-text {
@@ -89,7 +91,7 @@
   align-items: flex-start;
   gap: 8px;
   position: absolute;
-  top: 11px;
+  top: 10px;
   left: 80px;
 }
 
@@ -266,6 +268,9 @@ input {
   width: 20px;
   height: 20px;
 }
+.cekbox {
+  margin-right: 5px;
+}
 
 .page-content .label-name {
   position: relative;
@@ -297,7 +302,6 @@ input {
 /* button login */
 .button {
   display: flex;
-  margin-bottom: 100px;
   justify-content: center;
   align-items: center;
   justify-content: center;
@@ -330,7 +334,7 @@ input {
   align-items: flex-start;
   gap: 16px;
   position: absolute;
-  top: 410px;
+  top: 380px;
   left: 80px;
 }
 
@@ -342,7 +346,7 @@ input {
   all: unset;
   box-sizing: border-box;
   border: 1px solid var(--primary-60);
-  padding: 10px 215px;
+  padding: 10px 195px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -391,4 +395,12 @@ input {
   letter-spacing: var(--body-s-letter-spacing);
   line-height: var(--body-s-line-height);
   font-style: var(--body-s-font-style);
+}
+.sign {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2cm;
+  margin-left: 81px;
+  text-decoration: none;
+  color: #243d81;
 }
