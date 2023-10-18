@@ -71,6 +71,13 @@
         border-radius:  5px !important;
         color: #FFFFFF;
     }
+    input[type="search"]:focus{
+      border: none !important;
+      outline: transparent !important;
+    }
+    #searchbar::-webkit-search-cancel-button{
+      display: none;
+  }
   </style>
   <body>
     <header>
@@ -99,7 +106,7 @@
           </div>
           <form class="d-flex align-items-center">
             <div class="border rounded-pill me-3">
-              <input class="py-0" type="search" placeholder="Search..." />
+              <input class="py-0" id="searchbar" onkeyup="search()" type="search" placeholder="Search..." />
               <button type="submit">Search</button>
             </div>
             <div class="me-2">
@@ -355,5 +362,6 @@
           © 2023 Copyright: Roomahku 
         </div>
       </footer>
+      <script src="/js/searchFunction.js"></script>
   </body>
 </html>

@@ -47,6 +47,13 @@
       border: 1px solid transparent;
       border-radius: inherit;
     }
+    input[type="search"]:focus{
+      border: none !important;
+      outline: transparent !important;
+    }
+    #searchbar::-webkit-search-cancel-button{
+      display: none;
+  }
   </style>
   <body>
     <header>
@@ -63,7 +70,7 @@
           <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Design</a>
+                <a class="nav-link active" aria-current="page" href="/pages/design-pages/design-page.html">Design</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">News</a>
@@ -74,12 +81,8 @@
             </ul>
           </div>
           <form class="d-flex align-items-center">
-            <!-- <div class="border rounded-pill d-flex me-3 align-items-center">
-              <input class="form-control rounded-pill py-0" type="search" placeholder="Search" aria-label="Search" />
-              <span><button class="bg-none" type="submit"><i class="bi bi-search me-2"></i></button></span> -->
-            <!-- <form class="flex-grow-0 me-0"> -->
             <div class="border rounded-pill me-3">
-              <input class="py-0" type="search" placeholder="Search..." />
+              <input class="py-0" id="searchbar" onkeyup="search()" type="search" placeholder="Search..." />
               <button type="submit">Search</button>
               <!-- </form> -->
             </div>
