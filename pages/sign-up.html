@@ -21,8 +21,10 @@
       i {
         cursor: pointer;
       }
-
-      
+      input #password:active{
+        background: #F2F4F8;
+        outline: none;
+      }
     </style>
   </head>
   <body>
@@ -62,38 +64,41 @@
               </div>
               <small class="form-text text-muted">
                 It must be a combination of minimum 8 letters, numbers, and symbols.
-    </small>
+              </small>
               </div>
               <div class="d-grid mt-4">
-                <button class="text-white my-2 py-2 bg-primary border-0">Sign Up</button>
-                <button class="text-primary mt-2 py-2 bg-white border-primary align-middle">
+                <button class="text-white my-2 py-2 bg-primary border-0" onclick="toMain()">Sign Up</button>
+                <button class="text-primary mt-2 py-2 bg-white border-primary align-middle" type="button">
                     <i class="bi bi-google me-2"></i>
                     Sign Up With Google
                 </button>
                 <hr>
               </div>
-              <a href="#" class="text-decoration-none">Already have an account ?</a>
+              <a href="/pages/login.html" class="text-decoration-none">Already have an account ?</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      function showPassword() {
-        let x = document.getElementById('password')
-        let show = document.getElementById('togglePasswordShow')
-        let hide = document.getElementById('togglePasswordHide')
-        show.classList.remove('d-none')
-        if(x.type === 'password'){
-            x.type = 'text';
-            show.style.display = 'block'
-            hide.style.display = 'none'
-        } else {
-            x.type = 'password'
-            show.style.display = 'none'
-            hide.style.display = 'block'
-        }
-      }
-    </script>
   </body>
+  <script>
+    function showPassword() {
+      let x = document.getElementById('password')
+      let show = document.getElementById('togglePasswordShow')
+      let hide = document.getElementById('togglePasswordHide')
+      show.classList.remove('d-none')
+      if(x.type === 'password'){
+          x.type = 'text';
+          show.style.display = 'block'
+          hide.style.display = 'none'
+      } else {
+          x.type = 'password'
+          show.style.display = 'none'
+          hide.style.display = 'block'
+      }
+    }
+    function toMain(){
+      window.location.href = "/pages/main.html"
+    }
+  </script>
 </html>
