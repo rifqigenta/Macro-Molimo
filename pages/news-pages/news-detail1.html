@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Article</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    button[type="submit"] {
+      text-indent: -999px;
+      overflow: hidden;
+      width: 40px;
+      padding: 0;
+      margin: 0;
+      border: 1px solid transparent;
+      border-radius: inherit;
+      background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+      cursor: pointer;
+      opacity: 0.7;
+    }
+    input[type="search"] {
+      border: none;
+      background: transparent;
+      margin: 0;
+      padding: 7px 8px;
+      font-size: 14px;
+      color: inherit;
+      border: 1px solid transparent;
+      border-radius: inherit;
+    }
+    input[type="search"]:focus{
+      border: none !important;
+      outline: transparent !important;
+    }
+    #searchbar::-webkit-search-cancel-button{
+      display: none;
+  }
+  
+  </style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow p-0">
+          <div class="container justify-content-between">
+            <!-- <img class="navbar-brand" src="/assets/images/LOGO.jpg" width="30" alt="" /> -->
+            <div class="navbar-brand d-flex">
+              <img class="my-0 me-2 p-0" src="/assets/images/LOGO.jpg" width="40" alt="" />
+              <a class="navbar-brand text-decoration-none fs-4 fw-bold p-0" href="#">Roomahku</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Design</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/news-pages/news-home.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/product-pages/product-home.html">Product</a>
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex align-items-center">
+              <div class="border rounded-pill me-3">
+                <input class="py-0" id="searchbar" onkeyup="search()" type="search" placeholder="Search..." />
+                <button type="submit">Search</button>
+              </div>
+              <div class="me-2">
+                <button class="btn text-white rounded-pill" type="button" style="background-color: #363940">Let's Design</button>
+              </div>
+              <div class="d-flex">
+                <i class="bi bi-person h3"></i>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <section>
+          <div class="container-fluid d-flex align-items-center justify-content-center" id="hero" style="background-image: url('/assets/images/news/news-detail-hero.avif'); background-position: 0px 40%; background-size: cover; height: 50vh;"></div>
+        </section>
+      </header>
+    <main class="min-vh-100">
+        <div class="container mt-5">
+            <div class="container px-0">
+                <div class="d-flex px-0">
+                    <a class="d-flex align-items-center text-decoration-none text-secondary fw-bold fs-4" href="/pages/news-pages/news-home.html">Article 
+                        <span class="d-flex ms-2 mt-1 align-items-center justify-content-center">
+                            <i class="fa-sharp fa-solid fa-chevron-right me-2" ></i>
+                        </span>
+                    </a>
+                    <a class="text-decoration-none fw-bold text-dark fs-4" href="#">For House</a>
+                </div>
+                <div class="mt-4" style="width: 65.7%;">
+                    <h1 class="mb-2">Tips Memilih Kombinasi Warna Interior Rumah Yang Sesuai</h1>
+                    <p class="p-0" style="color: #363940;"><i class="fa-solid fa-heart fa-lg me-2"></i><small>30 Sep 23, by Tina P</small></p>
+                </div>
+            </div>  
+            <div class="container mb-5 px-0">
+                <img src="/assets/images/news/news-detail1.svg" style="float: left; shape-outside: url('/assets/images/news/news-detail1.svg'); margin-right: 20px; shape-margin: 20px;" alt="">
+                <div class="article-desc" style="text-align: justify; line-height: 1.1em;">
+                    <p>
+                        Warna interior sebuah rumah akan mempengaruhi suasana. Interior ruangan jadi salah satu elemen yang sangat penting untuk diperhatikan lantaran perannya yang sangat vital. Perhatikan saja, segala aktivitas dalam ruangan pasti bersinggungan dengan berbagai elemen interior.
+                    </p>
+                    <p>
+                        Makanya, setiap hal di dalamnya mesti diperhatikan, dari mulai pemilihan furniture hingga startegi kombinasi warna-nya.
+                    </p>
+                    <p>
+                        Interior yang dimaksud disini adalah semua ruangan yang terlindungi oleh dinding rumah. Bayangkan misalnya jika interior rumah terabaikan, maka secara keseluruhan estetika rumah pasti akan minus.
+                    </p>
+                    <p>
+                        Jadi, kamar tidur, ruang tamu, kamar mandi, dan ruangan-ruangan lainnya masuk dalam kategori interior. Sehingga, mengaturnya kebutuhan tampilannya dengan baik sangatlah penting.
+                    </p>
+                </div>
+                <p style="text-align: justify;">
+                    <strong>Roda Warna</strong>: Manfaatkan roda warna sebagai alat panduan Anda. Ini membantu Anda memahami hubungan antara warna-warna yang berbeda dan memilih kombinasi yang sesuai dengan tujuan Anda. <strong>Warna Dominan</strong>: Pilih satu warna yang akan menjadi fokus utama dalam desain atau konsep Anda. 
+                </p>
+                <div class="d-flex" style="text-align: justify;">
+                    <p>
+                        <strong>Skema Warna Analog</strong>: Gabungkan warna-warna yang berdekatan di roda warna untuk menciptakan tampilan harmonis. Ini sering digunakan untuk menciptakan kesan yang nyaman bagi mata. <strong>Skema Warna Komplementer</strong>: Padukan warna yang berlawanan di roda warna untuk menciptakan kontras yang menarik. Ini bisa menjadi pilihan yang baik untuk menonjolkan elemen penting dalam desain. <strong>Warna Dominan dengan Warna Netral</strong>: Kombinasikan satu warna dominan dengan warna netral seperti putih, hitam, atau abu-abu untuk menciptakan keseimbangan yang estetis. <strong>Warna Monokromatik</strong>: Gunakan variasi dalam satu warna untuk menciptakan tampilan yang elegan dan sederhana. <strong>Warna Aksen</strong>: Tambahkan warna aksen untuk menyoroti elemen penting dalam desain Anda. Ini bisa memberikan sentuhan visual yang kuat. <strong>Uji Kombinasi Warna</strong>: Ujilah kombinasi warna secara visual dengan mengatur sampel warna atau palet warna. Ini membantu Anda melihat bagaimana warna-warna berinteraksi dalam konteks desain Anda.
+                    </p>
+                </div>
+            </div>
+            <div class="container px-0">
+                <div class="my-4">
+                    <h1>Read another news</h1>
+                </div>
+            </div>
+            <div class="container mb-5 px-0">
+                <div class="d-flex justify-content-between">
+                    <div class="card pb-5" style="width: 17em;">
+                        <img src="/assets/images/news/news-iklan5.svg" class="card-img-top"  style="padding-bottom: 5px;" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bolder" style="height: 2.5em; overflow: hidden;">Pemilihan Furniture Yang Tepat</h5>
+                          <p style="height: 4.5em; overflow: hidden;">
+                            Pemilihan Furnitur yang tepat didasari oleh kombinasi warna yang cocok dan tidak saling tumpang tindih..
+                          </p>
+                          <div class="d-flex align-items-center justify-content-start mt-4">
+                              <div class="rounded-circle"
+                              style="height: 50px; width: 50px; background-image: url(/assets/images/person-card.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+                              <div class="ms-3">
+                                  <ul class="list-unstyled m-auto">
+                                      <li class="fw-bold">Minh Pham</li>
+                                      <li class="text-secondary ">Senior Designer</li>
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    <div class="card pb-5" style="width: 17em;">
+                        <img src="/assets/images/news/news-iklan1.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bolder" style="height: 2.5em; overflow: hidden;">Desain Interior Unik</h5>
+                          <p style="height: 4.5em; overflow: hidden;">
+                              Perkembangan zaman banyak memberikan pengaruh terhadap bentuk dari desain interior....
+                          </p>
+                          <div class="d-flex align-items-center justify-content-start mt-4">
+                              <div class="rounded-circle"
+                              style="height: 50px; width: 50px; background-image: url(/assets/images/person-card.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+                              <div class="ms-3">
+                                  <ul class="list-unstyled m-auto">
+                                      <li class="fw-bold">Minh Pham</li>
+                                      <li class="text-secondary ">Senior Designer</li>
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    <div class="card pb-5" style="width: 17em;">
+                        <img src="/assets/images/news/news-iklan2.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bolder" style="height: 2.5em; overflow: hidden;">Intip Interior Rumah Raffi A.</h5>
+                          <p style="height: 4.5em; overflow: hidden;">
+                              Artis sekaligus suami Gigi ini yang tidak hanya gemar mengoleksi barang mewah juga suka mendekorasi rumahnya dengan..
+                          </p>
+                          <div class="d-flex align-items-center justify-content-start mt-4">
+                              <div class="rounded-circle"
+                              style="height: 50px; width: 50px; background-image: url(/assets/images/person-card.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+                              <div class="ms-3">
+                                  <ul class="list-unstyled m-auto">
+                                      <li class="fw-bold">Minh Pham</li>
+                                      <li class="text-secondary ">Senior Designer</li>
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    <div class="card pb-5" style="width: 17em;">
+                        <img src="/assets/images/news/news-iklan3.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bolder" style="height: 2.5em; overflow: hidden;">Desain Interior Rumah Pantai</h5>
+                          <p style="height: 4.5em; overflow: hidden;">
+                              Di pesisir pantai banyak rumah-rumah yang tinggal di pesisirnya, namun kebanyakan rumah pesisir..
+                          </p>
+                          <div class="d-flex align-items-center justify-content-start mt-4">
+                              <div class="rounded-circle"
+                              style="height: 50px; width: 50px; background-image: url(/assets/images/person-card.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+                              <div class="ms-3">
+                                  <ul class="list-unstyled m-auto">
+                                      <li class="fw-bold">Minh Pham</li>
+                                      <li class="text-secondary ">Senior Designer</li>
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center bottom text-white" style="background-color: #697077;">
+        <div class="container pt-4">
+            <section class="mt-2">
+                <a class="text-decoration-none text-white fw-bold mx-3" href="#">Design</a>
+                <a class="text-decoration-none text-white fw-bold mx-3" href="#">News</a>
+                <a class="text-decoration-none text-white fw-bold mx-3" href="#">Product</a>
+                <a class="text-decoration-none text-white fw-bold mx-3" href="#">About Us</a>
+            </section>
+        </div>
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <a
+              class="btn btn-link btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a
+              class="btn btn-link btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a
+              class="btn btn-link btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </section>
+        </div>
+          © 2023 Copyright: Roomahku 
+        </div>
+    </footer>
+    <script src="/js/searchFunction.js"></script>
+</body>
+</html>
