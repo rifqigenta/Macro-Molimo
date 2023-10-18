@@ -100,10 +100,14 @@
   height: 2913px;
   position: relative;
 }
-input {
+.frame-8 {
   border: 1px solid black;
-  padding: 4px 17px;
+  padding: 1px 5px;
   border-radius: 10px;
+}
+input {
+  border: none;
+  outline: none;
 }
 a {
   text-decoration: none;
@@ -150,9 +154,9 @@ button.seemore {
   width: 1310px;
   align-items: center;
   gap: 48px;
-  padding: 48px 80px;
+  padding: 40px 80px;
   position: absolute;
-  top: 2661px;
+  top: 2700px;
   left: 0;
   background-color: var(--coolgray-60);
 }
@@ -769,15 +773,14 @@ button.seemore {
 
 .home .heading-home-page {
   display: flex;
-  width: 1210px;
+  width: 1410px;
   align-items: center;
   justify-content: center;
   gap: 141px;
-  padding: 0px 76px 139px;
   position: absolute;
   top: 50px;
   left: 0;
-  background-color: var(--coolgray-10);
+  height: 100vh;
 }
 
 .home .content-3 {
@@ -910,7 +913,7 @@ button.seemore {
   width: 1140px;
   height: 35px;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   padding: 12px 115px;
   position: fixed;
   top: 0;
@@ -963,6 +966,7 @@ button.seemore {
   white-space: nowrap;
   font-style: var(--heading-4-font-style);
   color: #000000;
+  margin-right: 0px;
 }
 
 .home .for-figma {
@@ -1044,8 +1048,8 @@ button.seemore {
   border: 2px solid;
 }
 .logo-nav {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .home .text-wrapper-6 {
   position: relative;
