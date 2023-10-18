@@ -763,10 +763,10 @@ button.seemore {
 
 .home .placeholder-picture-8 {
   position: relative;
-  margin-left: -8cm;
+  margin-left: -7cm;
   align-self: stretch;
   flex-grow: 1;
-  width: 900px;
+  width: 800px;
   height: 275px;
   margin-top: 150px;
 }
@@ -910,7 +910,7 @@ button.seemore {
 
 .home .navbar {
   display: flex;
-  width: 1140px;
+  width: 1150px;
   height: 35px;
   align-items: center;
   gap: 10px;
