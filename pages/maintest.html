@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <!-- <style>
+    #hero{
+        background-image: url('/assets/images/design-page-hero.jpg');
+        height: max-content;
+    }
+</style> -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    button[type="submit"] {
+      text-indent: -999px;
+      overflow: hidden;
+      width: 40px;
+      padding: 0;
+      margin: 0;
+      border: 1px solid transparent;
+      border-radius: inherit;
+      background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+      cursor: pointer;
+      opacity: 0.7;
+    }
+    input[type="search"] {
+      border: none;
+      background: transparent;
+      margin: 0;
+      padding: 7px 8px;
+      font-size: 14px;
+      color: inherit;
+      border: 1px solid transparent;
+      border-radius: inherit;
+    }
+    input[type="search"]:focus{
+      border: none !important;
+      outline: transparent !important;
+    }
+    #searchbar::-webkit-search-cancel-button{
+      display: none;
+    }
+    button.product:hover{
+        background-color: #858585 !important;
+        border: 2px solid transparent !important;
+        color: #FFFFFF !important;
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow p-0">
+        <div class="container justify-content-between">
+          <!-- <img class="navbar-brand" src="/assets/images/LOGO.jpg" width="30" alt="" /> -->
+          <div class="navbar-brand d-flex">
+            <img class="my-0 me-2 p-0" src="/assets/images/LOGO.jpg" width="40" alt="" />
+            <a class="navbar-brand text-decoration-none fs-4 fw-bold p-0" href="#">Roomahku</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/pages/design-pages/design-page.html">Design</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/news-pages/news-home.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Product</a>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex align-items-center">
+            <div class="border rounded-pill me-3">
+              <input class="py-0" id="searchbar" onkeyup="search()" type="search" placeholder="Search..." />
+              <button type="submit">Search</button>
+            </div>
+            <div class="me-2">
+              <button class="btn text-white rounded-pill" type="button" style="background-color: #363940">Let's Design</button>
+            </div>
+            <div class="d-flex">
+              <a class="text-decoration-none text-secondary d-flex" href="/pages/profile-pages/profile.html"><i class="bi bi-person h3"></i></a>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <section>
+        <div class="container-fluid d-flex align-items-center justify-content-center" id="hero" style="background-image: url('/assets/images/hero-homepage.jpg'); background-size: cover; height: 100vh; background-position: 0px 70%;">
+          <div class="d-flex">
+            <div class="col px-0 mt-5">
+              <p class="pt-5 fw-bold" style="font-size: 54px; text-shadow: 5px 7px 12px #21272A;">Crafting Spaces, Shaping Dreams.</p>
+              <p class="mt-4 pt-3 mb-0 text-center" style="font-size: 20px;">Eksplore your creativity for design with us</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="min-vh-100">
+        <div class="container">
+            <div class="container px-0">
+                <div class="container px-0 mt-3 mb-5">
+                    <div class="py-4 ">
+                        <div class="card" style="border: none;">
+                            <div class="row g-0">
+                              <div class="col d-flex me-5">
+                                <div class="card-body px-0" style="width: 36em;">
+                                  <p class="card-title mb-4" style="font-weight: bolder; font-size: 36px;">Transforming Houses into Homes</p>
+                                  <p class="card-text" style="color: #363940; font-size: 18px;">
+                                    Now you can create your own design with using our website. Let’s find out what you need for your comfort zone.
+                                  </p>
+                                  <button id="buy" class="btn btn-primary py-2 text-white fw-bold mt-4 mb-5" type="button" style="width: 9em; border: 2px solid transparent; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Create Now</button>
+                                </div>
+                              </div>
+                              <div class="col ms-2" style="background-image: url('/assets/images/homepage/card1.jpg'); background-size: cover; background-position: center;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-0 mt-3 mb-5">
+                    <div class="my-4">
+                        <h1>Interior Design Inspiration For Room</h1>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                    <div class="card" style="width: 22em;">
+                        <img src="/assets/images/homepage/card2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">House</h5>
+                            <div class="container p-0 overflow-hidden" style="height: 100%; max-height: 3em;">
+                            <small class="card-text">Home, the most comfortable place of all. Make your home a reflection of who you are.</small>
+                            </div>
+                            <a class="text-decoration-none mt-4 fw-bold d-flex align-items-center" href="/pages/design-pages/living-room/livi-room.html">
+                            More Info
+                            <span class="d-flex ms-2 align-items-center justify-content-center">
+                                <i class="bi bi-arrow-right fw-bold"></i>
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                    <div class="card" style="width: 22em;">
+                        <img src="/assets/images/homepage/card3.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Office</h5>
+                            <div class="container p-0 overflow-hidden" style="height: 100%; max-height: 3em;">
+                            <small class="card-text">An uncomfortable atmosphere combined with a heavy workload will make you stressed, that’s w...</small>
+                            </div>
+                            <a class="text-decoration-none mt-4 fw-bold d-flex align-items-center" href="#">
+                            More Info
+                            <span class="d-flex ms-2 align-items-center justify-content-center">
+                                <i class="bi bi-arrow-right fw-bold"></i>
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                    <div class="card" style="width: 22em;">
+                        <img src="/assets/images/homepage/card4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apartment</h5>
+                            <div class="container p-0 overflow-hidden" style="height: 100%; max-height: 3em;">
+                            <small class="card-text">The most comfortable place to return to can be determined by how you decorate your apartment.</small>
+                            </div>
+                            <a class="text-decoration-none mt-4 fw-bold d-flex align-items-center" href="#">
+                            More Info
+                            <span class="d-flex ms-2 align-items-center justify-content-center">
+                                <i class="bi bi-arrow-right fw-bold"></i>
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <a href="/pages/design-pages/design-page.html">
+                            <button id="buy" class="btn btn-primary py-2 text-white fw-bold mt-5" type="button" style="width: 9em; border: 2px solid transparent; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">See More</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="container px-0 mt-3 mb-5">
+                    <div class="my-4">
+                        <h1>Article</h1>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="card" style="width: 17em;">
+                            <img src="/assets/images/homepage/card5.jpg" class="card-img-top"  style="height: 12.89em;" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title fw-bolder" style="height: 3.8em; overflow: hidden;">4 Tips for Mixing Patterns and Textures According to Designers kdfjadk</h5>
+                              <p style="height: 4.5em; overflow: hidden; text-align: justify;">
+                                Pemilihan Furnitur yang tepat didasari oleh kombinasi warna yang cocok dan tidak saling tumpang tindih..
+                              </p>
+                              <div class="d-flex align-items-center justify-content-start mt-4">
+                                  <div class="rounded-circle"
+                                  style="height: 50px; width: 50px; background-image: url(/assets/images/person-card.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+                                  <div class="ms-3">
+                                      <ul class="list-unstyled m-auto">
+                                          <li class="fw-bold">Siti Nur</li>
+                                          <li class="text-secondary ">Writer</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end">
+                                  <div class="mt-3">
+                                    <a href="" class="text-decoration-none ms-3 fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-comment-dots fa-lg me-1"></i>8
+                                    </a>
+                                    <a href="" class="text-decoration-none fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-heart fa-lg me-1"></i>3
+                                    </a>
+                                    <a href="" class="text-decoration-none fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-eye fa-lg me-1"></i>47
+                                    </a>
+                                  </div>
+                                </div>
+                                <a href="/pages/news-pages/news-detail2.html" class="p-0 stretched-link"></a>
+                            </div>
+                          </div>
+                        <div class="card" style="width: 17em;">
+                            <img src="/assets/images/homepage/card6.jpg" class="card-img-top"  style="height: 12.89em;" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title fw-bolder" style="height: 3.8em; overflow: hidden;">7 Interior Design Recommendations for Homes Inhabited by Seniors</h5>
+                              <p style="height: 4.5em; overflow: hidden; text-align: justify;">
+                                Some people design their homes to accommodate their age, especially for those who are elderly or senior citizens
+                              </p>
+                              <div class="d-flex align-items-center justify-content-start mt-4">
+                                  <div class="rounded-circle"
+                                  style="height: 50px; width: 50px; background-image: url(/assets/images/person-card.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+                                  <div class="ms-3">
+                                      <ul class="list-unstyled m-auto">
+                                          <li class="fw-bold">Risna Halid</li>
+                                          <li class="text-secondary ">Writer</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end">
+                                  <div class="mt-3">
+                                    <a href="" class="text-decoration-none ms-3 fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-comment-dots fa-lg me-1"></i>4
+                                    </a>
+                                    <a href="" class="text-decoration-none fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-heart fa-lg me-1"></i>9
+                                    </a>
+                                    <a href="" class="text-decoration-none fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-eye fa-lg me-1"></i>76
+                                    </a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card" style="width: 17em;">
+                            <img src="/assets/images/homepage/card7.avif" class="card-img-top"  style="height: 12.89em;" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title fw-bolder" style="height: 3.8em; overflow: hidden;">The Combination of Sage Green Paint Can Be Applied in Home Interior</h5>
+                              <p style="height: 4.5em; overflow: hidden; text-align: justify;">
+                                There are many colors that complement sage green, a trending color that's currently in the spotlight, to be applied in home interior design.
+                              </p>
+                              <div class="d-flex align-items-center justify-content-start mt-4">
+                                  <div class="rounded-circle"
+                                  style="height: 50px; width: 50px; background-image: url(/assets/images/person-card.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+                                  <div class="ms-3">
+                                      <ul class="list-unstyled m-auto">
+                                          <li class="fw-bold">Rindi Ariska</li>
+                                          <li class="text-secondary ">Writer</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end">
+                                  <div class="mt-3">
+                                    <a href="" class="text-decoration-none ms-3 fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-comment-dots fa-lg me-1"></i>9
+                                    </a>
+                                    <a href="" class="text-decoration-none fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-heart fa-lg me-1"></i>6
+                                    </a>
+                                    <a href="" class="text-decoration-none fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-eye fa-lg me-1"></i>85
+                                    </a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="card" style="width: 17em;">
+                            <img src="/assets/images/homepage/card8.jpg" class="card-img-top"  style="height: 12.89em;" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title fw-bolder" style="height: 3.8em; overflow: hidden;">5 Ways to Make the Kitchen and Dining Room Look More Spacious</h5>
+                              <p style="height: 4.5em; overflow: hidden; text-align: justify;">
+                                There are several ways to make the kitchen and dining room appear more spacious that you can try.
+                              </p>
+                              <div class="d-flex align-items-center justify-content-start mt-4">
+                                  <div class="rounded-circle"
+                                  style="height: 50px; width: 50px; background-image: url(/assets/images/person-card.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+                                  <div class="ms-3">
+                                      <ul class="list-unstyled m-auto">
+                                          <li class="fw-bold">CNN Indonesia</li>
+                                          <li class="text-secondary ">Writer</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end">
+                                  <div class="mt-3">
+                                    <a href="" class="text-decoration-none ms-3 fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-comment-dots fa-lg me-1"></i>8
+                                    </a>
+                                    <a href="" class="text-decoration-none fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-heart fa-lg me-1"></i>3
+                                    </a>
+                                    <a href="" class="text-decoration-none fw-bold" style="color: #999999;">
+                                        <i class="fa-solid fa-eye fa-lg me-1"></i>47
+                                    </a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+                <div class="container px-0 mt-3 mb-5">
+                    <div class="my-4">
+                        <h1>Product Category</h1>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Sofa</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Chair & Table</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Drawers</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Mattress</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Rugs & Carpet</button>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between my-2">
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Wardrobe</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Mirror</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Sofabed</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Toilet Shelf</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Side Tables</button>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between my-2">
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Consoles</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Storage</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Bedframes</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Desk</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Accessories</button>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between my-2">
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Kitchen Set</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Kitchen Tools</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Bathroom</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Lighting</button>
+                        </a>
+                        <a href="/pages/product-pages/product-home.html" class="text-decoration-none invisible">
+                            <button class="product btn py-2 text-dark fw-bold" type="button" style="width: 13em; border: 2px solid #C3C5C6; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);">Rugs & Carpet</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center bottom text-white" style="background-color: #697077;">
+        <div class="container pt-4">
+            <section class="mt-2">
+                <a class="text-decoration-none text-white fw-bold mx-3" href="#">Design</a>
+                <a class="text-decoration-none text-white fw-bold mx-3" href="#">News</a>
+                <a class="text-decoration-none text-white fw-bold mx-3" href="#">Product</a>
+                <a class="text-decoration-none text-white fw-bold mx-3" href="#">About Us</a>
+            </section>
+        </div>
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <a
+              class="btn btn-link btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a
+              class="btn btn-link btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a
+              class="btn btn-link btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </section>
+        </div>
+          © 2023 Copyright: Roomahku 
+        </div>
+    </footer>
+    <script src="/js/searchFunction.js"></script>
+</body>
+</html>
